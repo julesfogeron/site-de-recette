@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "recette": {
+      "home": {
+        "title": "Recettes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Recette",
+        "createOrEditLabel": "Create or edit a Recette",
+        "notFound": "No Recettes found"
+      },
+      "created": "A new Recette is created with identifier {{ param }}",
+      "updated": "A Recette is updated with identifier {{ param }}",
+      "deleted": "A Recette is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Recette {{ id }}?"
+      },
+      "detail": {
+        "title": "Recette"
+      },
+      "id": "Id",
+      "nom": "Nom",
+      "description": "Description",
+      "contenu": "Contenu"
+    }
+  }
+}

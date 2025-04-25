@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (recette(); as recetteRef) {
+      <div>
+        <h2 data-cy="recetteDetailsHeading"><span jhiTranslate="myApp.recette.detail.title">Recette</span></h2>
+
+        <hr />
+
+        <jhi-alert-error />
+
+        <jhi-alert />
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="myApp.recette.id">Id</span></dt>
+          <dd>
+            <span>{{ recetteRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="myApp.recette.nom">Nom</span></dt>
+          <dd>
+            <span>{{ recetteRef.nom }}</span>
+          </dd>
+          <dt><span jhiTranslate="myApp.recette.description">Description</span></dt>
+          <dd>
+            <span>{{ recetteRef.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="myApp.recette.contenu">Contenu</span></dt>
+          <dd>
+            <span>{{ recetteRef.contenu }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+        </button>
+
+        <button type="button" [routerLink]="['/recette', recetteRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

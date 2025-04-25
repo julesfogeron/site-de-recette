@@ -1,0 +1,8 @@
+
+
+entity Recette {
+  Id Integer
+  Nom String
+  Description String
+  Contenu String
+}

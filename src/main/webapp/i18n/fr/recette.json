@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "recette": {
+      "home": {
+        "title": "Recettes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Recette",
+        "createOrEditLabel": "Créer ou éditer un Recette",
+        "notFound": "Aucun Recette trouvé"
+      },
+      "created": "Un nouveau Recette a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Recette avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Recette avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Recette {{ id }} ?"
+      },
+      "detail": {
+        "title": "Recette"
+      },
+      "id": "Id",
+      "nom": "Nom",
+      "description": "Description",
+      "contenu": "Contenu"
+    }
+  }
+}

@@ -80,7 +80,7 @@ public class UserMapper {
         return authorities;
     }
 
-    public User userFromId(Long id) {
+    public User userFromId(Integer id) {
         if (id == null) {
             return null;
         }
